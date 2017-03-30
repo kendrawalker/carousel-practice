@@ -1,0 +1,46 @@
+/*kitty carousel*/
+
+.cat {
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+}
+
+/*for onscreen*/
+.onscreen {
+  transform: translateX(0);
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+
+/*for left-exit screen*/
+.left-exit {
+  transform: translateX(-100%);
+  transition-duration: 1s;
+  transition-property: transform;
+}
+
+#dots {
+  position: absolute;
+  left: 45%;
+}
+
+.dot {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 6px solid white;
+  top: 500px;
+
+}
+
+.active {
+  background-color:rgba(255, 255, 255, 0.5);
+
+}
